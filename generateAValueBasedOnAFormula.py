@@ -18,13 +18,20 @@ Hints:
 If the output received is in decimal form, it should be rounded off to its nearest value (for example, if the output received is 26.0, it should be printed as 26)
 In case of input data being supplied to the question, it should be assumed to be a console input. 
 """
-l=[]
+from math import sqrt
+D=[100,150,180]
+C=50
+H=30
 
-for i in range(2000,3200):
-    if i%7==0 and i%5!=0:
-        l.append(str(i))
+output=[]
+for i in D:
+    print(i)
+    Q=int(round(sqrt((2*C*i)/H),0))
+    output.append(Q)
+    
 
+print(output)
+    
 
-print ','.join(l)
 
 
